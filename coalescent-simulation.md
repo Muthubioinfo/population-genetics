@@ -1,6 +1,6 @@
 # Coalescence theory
 
-```
+```python
 #Coalescence - tracing back to ancestry
 
 #1) Simulating ancestry
