@@ -1,12 +1,13 @@
 # Coalescence theory
 
 ```python
-#Coalescence - tracing back to ancestry
 
-#1) Simulating ancestry
-#2) Plotting tree topologies
-#3) Estimating Time to Most Recent Common Ancestor (TMRCA)
-#4) Creating visualizations
+# Coalescence - tracing back to ancestry
+
+# 1) Simulating ancestry
+# 2) Plotting tree topologies
+# 3) Estimating Time to Most Recent Common Ancestor (TMRCA)
+# 4) Creating visualizations
 
 
 import os
