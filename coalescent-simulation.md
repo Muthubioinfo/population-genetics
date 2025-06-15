@@ -2,7 +2,7 @@
 
 
 
-Coalescence - tracing back to ancestry
+Coalescent - tracing back to ancestry
 
 - Simulating ancestry
 - Plotting tree topologies
