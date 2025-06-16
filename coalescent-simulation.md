@@ -78,5 +78,3 @@ plt.show()
 
   
 ![tmrca_distribution](https://github.com/user-attachments/assets/5b1d51f8-adbd-48f8-a412-30e808f23baf)
-![tmrca_distribution](https://github.com/user-attachments/assets/5b1d51f8-adbd-48f8-a412-30e808f23baf)
-
