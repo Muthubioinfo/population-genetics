@@ -2,7 +2,11 @@
 This repo contains tutorials on important concepts in population genetics such as Random genetic drift, Inbreeding coefficient, Coalescent (Backward simulation using ancestral recombination graph), and Forward simulation using Wright-Fisher model.
 I provide R and Python scripts to showcase these concepts. I aim to improve this repo furthermore.
 
-I constructed a R package called 'genedriftsim', that has two cases to study Random genetic drift -
+For simulating under random genetic drift, I constructed a R package called 'genedriftsim'. Here, I study two cases of random genetic drift -
+
+```r
+devtools::install_github("Muthubioinfo/population-genetics/genedriftsim")
+```
 
 ### Case: 1 - Individual-level allele sampling (no replicates)
 This involves simulating the selection of alleles from a population, one individual at a time, using allele frequencies. This process mimics drawing alleles randomly from a gene pool, where the probability of selecting each allele (A or a) is determined by its frequency in the population. 
