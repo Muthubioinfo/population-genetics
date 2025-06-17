@@ -1,7 +1,7 @@
 
 # Forward-Time Simulation with Ancestral Recombination Graph (ARG) using Tskit
 
-This shows how to simulate forward-time ancestry using a basic Wright-Fisher model and visualize it with tskit tables. The simulation stores the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, and models recombination optionally.
+This shows how to simulate forward-time ancestry using a basic Wright-Fisher model and visualize it with tskit tables. The simulation stores the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, and models recombination optionally. This example is recreating from  tskit tutorial on [Building a forward simulator](https://tskit.dev/tutorials/forward_sims.html).
 
 
 ## Wright-Fisher Model
