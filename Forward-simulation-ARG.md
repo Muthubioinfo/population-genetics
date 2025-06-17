@@ -1,7 +1,7 @@
 
 # Forward-Time Simulation with Ancestral Recombination Graph (ARG) using Tskit
 
-This shows how to simulate forward-time ancestry using a basic Wright-Fisher model and visualize it with tskit tables. The simulation stores the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, and models recombination optionally. This example is recreating from  tskit tutorial on [Building a forward simulator](https://tskit.dev/tutorials/forward_sims.html).
+This shows how to simulate forward-time ancestry using discrete-time Wright-Fisher model and visualize it with tskit tables. The simulation stores the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, assuming (1) without recombination, and (2) with recombination. This example is recreated from tskit tutorial on [Building a forward simulator](https://tskit.dev/tutorials/forward_sims.html).
 
 
 ## Wright-Fisher Model
@@ -92,8 +92,9 @@ def new_population(tables, time, prev_pop, recombination_rate) -> dict[int, tupl
             add_inheritance_paths(tables, parent_genomes, child_genome, recombination_rate)
     return pop
 ```
+
 🔄 Start Initial Population
-This function creates the founder generation.
+This function creates the founder generation or initial/present population.
 
 ```python3
 def initialise_population(tables, time, size) -> dict[int, tuple[int, int]]:
@@ -113,8 +114,8 @@ Example for usage:
 tables = tskit.TableCollection(sequence_length=50_000)
 pop0 = initialise_population(tables, time=0, size=10)
 pop1 = new_population(tables, time=1, prev_pop=pop0, recombination_rate=0)
-Once all generations are simulated, you can simplify and save the tree sequence:
 ```
+Once all generations are simulated, you can simplify and save the tree sequence:
 
 ```python
 ts = tables.tree_sequence()
