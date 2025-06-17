@@ -1,8 +1,8 @@
 # Coalescence theory
 
-Coalescent - tracing back to ancestry
+Coalescent theory is a retrospective model in population genetics that traces the genealogical history of a sample of alleles backward in time to their most recent common ancestor (MRCA). Instead of modeling how alleles evolve forward through generations, the coalescent focuses on how lineages merge ("coalesce") as we go back in time.
 
-
+# Coalescent Simulation and Ancestral Analysis
 - Simulating ancestry
 - Plotting tree topologies
 - Estimating Time to Most Recent Common Ancestor (TMRCA)
