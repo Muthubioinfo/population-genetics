@@ -1,7 +1,7 @@
 # Population-genetics
 This repo contains tutorials on important concepts in population genetics such as Random genetic drift, Inbreeding coefficient (see ```Inbreeding.py```), Coalescence (Backward simulation, see ```coalescent-simulation.md```) , and Forward simulation using Wright-Fisher model based on ancestral recombination graph (see ```Forward-simulation-ARG.md```). I provide R and Python scripts to showcase these concepts and aim to improve this repo furthermore.
 
-# Random genetic drift
+## Random genetic drift
 For simulating under random genetic drift, I constructed a R package called 'genedriftsim'. Here, I study two cases of random genetic drift -
 
 ```r
