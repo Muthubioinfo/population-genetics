@@ -2,21 +2,21 @@
 
 Coalescent theory is a retrospective model in population genetics that traces the genealogical history of a sample of alleles backward in time to their most recent common ancestor (MRCA). Instead of modeling how alleles evolve forward through generations, the coalescent focuses on how lineages merge ("coalesce") as we go back in time.
 
-# Coalescent Simulation and Ancestral Analysis
+## Coalescent Simulation and Ancestral Analysis
 - Simulating ancestry
 - Plotting tree topologies
 - Estimating Time to Most Recent Common Ancestor (TMRCA)
 - Simulating TMRCA
 
 
-## Step 1: Set Working Directory
+### Step 1: Set Working Directory
 ```python
 import os
 print(os.getcwd())
 os.chdir("/path-working-directory")
 ```
 
-## Step 2: Import Required Libraries
+### Step 2: Import Required Libraries
 
 ```
 import msprime
@@ -48,7 +48,7 @@ with open("tree.svg", "w") as f:
 print("Tree SVG saved to 'tree.svg'")
 ```
 
-## Step 5: Replicate the Simulation to Estimate TMRCA Distribution
+### Step 5: Replicate the Simulation to Estimate TMRCA Distribution
 
 ```python
 def tmrca_distribution_sim(samples=10,Ne=1e4, replicates=1000):
@@ -63,7 +63,7 @@ def tmrca_distribution_sim(samples=10,Ne=1e4, replicates=1000):
 tmrca_list = tmrca_distribution_sim()
 ```
 
-Step 6: Plot Histogram of TMRCA Values
+### Step 6: Plot Histogram of TMRCA Values
 Plots the distribution of TMRCA over all replicates
 kde=True overlays a smoothed density curve.
 Shows how coalescent times vary even with the same population parameters.
