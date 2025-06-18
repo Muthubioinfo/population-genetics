@@ -1,4 +1,4 @@
-#Inbreeding: Homozygosity, IBD, and Inbreeding Depression
+# Inbreeding: Homozygosity, IBD, and Inbreeding Depression
 
 Key Concepts:
 - Inbreeding increases the proportion of **homozygous individuals** (AA, aa) at the cost of heterozygotes (Aa).
