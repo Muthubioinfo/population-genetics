@@ -7,9 +7,9 @@ Key Concepts:
 - F_I for an individual in a pedigree is computed by summing over all paths to a common ancestor.
 - Inbreeding Depression is the reduction in fitness due to expression of deleterious alleles.
 
-# ----------------------------------------------------------------------------
-# 🧬 PART 1: GENOTYPE FREQUENCIES ACROSS GENERATIONS DUE TO INBREEDING
-# ----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## 🧬 PART 1: GENOTYPE FREQUENCIES ACROSS GENERATIONS DUE TO INBREEDING
+## ----------------------------------------------------------------------------
 
 ```python
 def simulate_genotype_frequencies(generations=5):
@@ -31,9 +31,9 @@ def simulate_genotype_frequencies(generations=5):
 simulate_genotype_frequencies()
 ```
 
-# ----------------------------------------------------------------------------
-# 🧬 PART 2: INBREEDING COEFFICIENT & EFFECT ON GENOTYPE PROPORTIONS
-# ----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## 🧬 PART 2: INBREEDING COEFFICIENT & EFFECT ON GENOTYPE PROPORTIONS
+## ----------------------------------------------------------------------------
 
 ```python
 def inbreeding_coefficient(H_observed, p, q):
@@ -54,9 +54,9 @@ print(f"\nInbreeding coefficient F = {F:.3f}")
 print(f"Expected with inbreeding: AA = {AA:.3f}, Aa = {Aa:.3f}, aa = {aa:.3f}")
 ```
 
-# ----------------------------------------------------------------------------
-# 🧬 PART 3: RELATIVE RISK OF DISEASE FROM A RECESSIVE ALLELE (INBREEDING DEPRESSION)
-# ----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## 🧬 PART 3: RELATIVE RISK OF DISEASE FROM A RECESSIVE ALLELE (INBREEDING DEPRESSION)
+## ----------------------------------------------------------------------------
 
 ```python
 def relative_risk(F, q):
@@ -72,9 +72,9 @@ def relative_risk(F, q):
 relative_risk(F=1/16, q=0.01)
 ```
 
-# ----------------------------------------------------------------------------
-# 🧬 PART 4: PEDIGREE-BASED INBREEDING COEFFICIENT (Wright’s path method)
-# ----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## 🧬 PART 4: PEDIGREE-BASED INBREEDING COEFFICIENT (Wright’s path method)
+## ----------------------------------------------------------------------------
 
 ```python
 def pedigree_inbreeding(fa, n):
@@ -90,9 +90,9 @@ def pedigree_inbreeding(fa, n):
 pedigree_inbreeding(fa=0.98, n=4)
 ```
 
-# ----------------------------------------------------------------------------
-# 🧬 PART 5: COUSIN MATING INBREEDING COEFFICIENT
-# ----------------------------------------------------------------------------
+## ----------------------------------------------------------------------------
+## 🧬 PART 5: COUSIN MATING INBREEDING COEFFICIENT
+## ----------------------------------------------------------------------------
 
 ```python
 def cousin_mating_inbreeding(n_generations):
