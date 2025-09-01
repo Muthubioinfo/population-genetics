@@ -1,5 +1,11 @@
 # Coalescence theory
+Large constant population
 
+Non-overlapping generations
+
+Probability that two lineages coalesce in one generation = $ \frac{1}{2N} $.
+
+Therefore, waiting time until coalescence follows a geometric distribution in discrete generations (or exponential in continuous time).
 The following Python code demonstrates the probability of coalescence using a simple simulation of Kingman’s coalescent process. The coalescent waiting time between two lineages follows a geometric distribution in discrete generations (which is the discrete analogue of the exponential distribution in continuous time).
 
 ```python
