@@ -7,13 +7,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #### Algorithm 1
-n = 50 # Number of tmax
+n = 50 # Number of generations
 N = 5 # Population size
 tmax = list(range(n))
 
-tmax = list(range(n))
-new_internal_node = n
-
+#Define function to calculate the probability that two lineages coalesce
 def func(tmax, N):
     p = {}
     for t in range(1, (max(tmax) + 1)):
