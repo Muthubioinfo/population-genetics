@@ -1,6 +1,6 @@
 # Coalescence theory
 
-A simple python code to demonstrate probability of coalescence using a simple simulation of Kingman’s coalescent process.
+The following Python code demonstrates the probability of coalescence using a simple simulation of Kingman’s coalescent process. The coalescent waiting time between two lineages follows a geometric distribution in discrete generations (which is the discrete analogue of the exponential distribution in continuous time).
 
 ```python
 import numpy as np
@@ -10,15 +10,7 @@ import matplotlib.pyplot as plt
 n = 50 # Number of tmax
 N = 5 # Population size
 tmax = list(range(n))
-new_internal_node = n
 
-# Initialise
-k = n
-waiting_times = []
-coalescent_events = []
-current_time = 0.0
-node_times = {i: 0.0 for i in tmax}  # Time = 0 for all leaves
-tree = {}  # Dictionary to store tree: key = node, value = (child1, child2)
 tmax = list(range(n))
 new_internal_node = n
 
