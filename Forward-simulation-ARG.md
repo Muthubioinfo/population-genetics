@@ -1,19 +1,19 @@
 
 # Forward-Time Simulation with Ancestral Recombination Graph (ARG) using Tskit
 
-This shows how to simulate forward-time ancestry using discrete-time Wright-Fisher model and visualize it with tskit tables. The simulation stores the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, assuming (1) without recombination, and (2) with recombination. This example is recreated from tskit tutorial on [Building a forward simulator](https://tskit.dev/tutorials/forward_sims.html).
+This shows how to simulate forward-time ancestry using discrete-time Wright-Fisher model and visualize it with tskit tables. The simulation shows the full Ancestral Recombination Graph (ARG) by tracking inheritance across generations, assuming (1) without recombination, and (2) with recombination. The following example is recreated from tskit tutorial on [Building a forward simulator](https://tskit.dev/tutorials/forward_sims.html).
 
 
 ## Wright-Fisher Model
 
-Assumptions:
+Basic assumptions of Wright-Fisher:
 * A constant population of size N diploid individuals.
-* Generations are non-overlapping.
+* Generations are non-overlapping (population emerged from previous generations, and do not coexist in time)
 * Each succesive generation is formed by random mating from the previous one.
 
-Consider a simulation of diploid individuals (2 chromosomes per individual). Each chromosome is inherited from a parent chromosome in the previous generation, and assuming recombination can optionally occur during inheritance.
+Consider a simulation of diploid individuals. Each chromosome is inherited from a parent chromosome in the previous generation, and assuming recombination can optionally occur during inheritance.
 
-Initialize tskit and create empty variables
+In python, first initialize tskit and assign variable for population size (L).
 
 ```python
 import tskit
@@ -29,7 +29,7 @@ default_node_flags = tskit.NODE_IS_SAMPLE
 ```
 
 ### Create a new diploid individual 
-Each individual has 2 genomes. Define a function to add a diploid individual to the population and return their node IDs.
+Assuming each individual in the population carries a diploid genome. Hence, define a function to add a diploid individual to the population and return assign node IDs.
 
 ```python
 def make_diploid(tables, time, parent_individual) -> tuple[int, tuple[int, int]]:
